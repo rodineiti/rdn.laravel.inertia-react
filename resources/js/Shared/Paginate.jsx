@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 const Paginate = (props) => {
   const getUrl = (url, current_page = null) => {
     if (url) {
-      console.log(url);
       let indexUrl = url.split("page=");
       let page = indexUrl[1];
       if (current_page) {
